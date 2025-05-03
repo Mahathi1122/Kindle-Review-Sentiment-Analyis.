@@ -1,18 +1,31 @@
 ## 📚 Amazon Kindle Store Review Sentiment Analysis
 
 ### 🔍 **About the Dataset**
-This project uses a 5-core dataset of Amazon Kindle Store product reviews, spanning from **May 1996 to July 2014**, containing **982,619 entries**. Each reviewer has reviewed at least 5 products, and each product has received at least 5 reviews.
+This project uses a 5-core dataset of Amazon Kindle Store product reviews, spanning from **May 1996 to July 2014**, containing **12000 entries**. Each reviewer has reviewed at least 5 products, and each product has received at least 5 reviews.
 
 **📁 Dataset Columns:**
-- `asin`: Product ID (e.g., B000FA64PK)
-- `helpful`: Helpfulness rating (e.g., 2/3)
-- `overall`: Product rating (target variable for some analyses)
-- `reviewText`: Full text of the review
-- `reviewTime`: Review date
-- `reviewerID`: Reviewer ID
-- `reviewerName`: Reviewer's name
-- `summary`: Short description/summary of review
-- `unixReviewTime`: Review time in Unix timestamp
+Here's a clean **README-style bullet list** that you can copy and paste into your `README.md` file on GitHub to describe your dataset:
+
+---
+
+## 📄 Dataset Overview
+
+This dataset contains 12,000 Kindle product reviews with the following features:
+
+- **Unnamed: 0.1**: Index column (int64)
+- **Unnamed: 0**: Secondary index column (int64)
+- **asin**: Amazon Standard Identification Number – unique product ID (object)
+- **helpful**: Helpfulness votes in the format `[upvotes, total_votes]` (object)
+- **rating**: Star rating given by the reviewer (int64)
+- **reviewText**: Full text of the customer review (object)
+- **reviewTime**: Date when the review was posted (object)
+- **reviewerID**: Unique ID for the reviewer (object)
+- **reviewerName**: Name of the reviewer (object, 11962 non-null)
+- **summary**: Summary/title of the review (object, 11998 non-null)
+- **unixReviewTime**: Time of review in UNIX timestamp format (int64)
+
+
+
 
 **🔗 Source:**  
 Amazon Product Data by Julian McAuley, UCSD  
